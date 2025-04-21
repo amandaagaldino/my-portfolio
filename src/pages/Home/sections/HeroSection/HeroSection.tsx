@@ -11,9 +11,9 @@ import EmailIcon from '@mui/icons-material/Email';
 const HeroSection: React.FC = () => {
 
     const StyledImg = styled("img")(({ theme }) => ({
-        width: "80%",
+        width: "50%",
         border: `1px solid ${theme.palette.primary.contrastText}`,
-        borderRadius: "50%",
+        borderRadius: "60%",
         position: "relative"
     }));
 
@@ -62,9 +62,9 @@ const HeroSection: React.FC = () => {
             <StyledHero>
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
-                        <Grid xs={12} md={5}>
+                        <Grid item xs={12} md={4}>
                             <Box position="relative" pb={3}>
-                                <Box width={"150%"} position="absolute" top={-100} right={0}>
+                                <Box width={"100%"} position="absolute" top={-100} right={0}>
                                     <AnimatedBackground />
                                 </Box>
                                 <Box textAlign="center">
@@ -72,14 +72,14 @@ const HeroSection: React.FC = () => {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid xs={12} md={7}>
+                        <Grid item xs={12} md={8}>
                             <Typography color="primary.contrastText" variant="h1" pb={2} textAlign="center">
                                 Adriana Saty
                             </Typography>
                             <Typewriter text="I'm a Software Engineer" delay={120} variant="h2" color="primary.contrastText" />
                             <Box mt={3}>
                                 <Grid container spacing={3} display="flex" justifyContent="center">
-                                    <Grid xs={10} md={4}>
+                                    <Grid item xs={10} md={4}>
                                         <StyledButton onClick={() => handleDownload()}>
                                             <DownloadIcon />
                                             <Typography>
@@ -87,7 +87,7 @@ const HeroSection: React.FC = () => {
                                             </Typography>
                                         </StyledButton>
                                     </Grid>
-                                    <Grid xs={10} md={4}>
+                                    <Grid item xs={10} md={4}>
                                         <StyledButton onClick={() => handleEmail()}>
                                             <EmailIcon />
                                             <Typography>

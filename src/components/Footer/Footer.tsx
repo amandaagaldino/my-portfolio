@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                         </IconButton>
                     </Box>
                     <Typography textAlign="center">
-                        © 2024 Adriana Saty - All rights reserved
+                        © 2025 Amanda Galdino - All rights reserved
                     </Typography>
                 </Container>
             </Box>
